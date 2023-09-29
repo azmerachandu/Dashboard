@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Dashboard API Example</title>
+</head>
+<body>
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="data"></div>
+
+    <script>
+        // Replace with your API endpoint and authentication method
+        const apiUrl = "https://newsapi.org/v2/everything?q=example"; // Modify 'example' to your desired query
+        const apiKey = 'a93114c47d164dada63d698f4cf1dffe'; // Replace with your News API key
+
+        function fetchData() {
+            fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${apiKey}`,
+                },
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Handle the fetched data here
+                const dataElement = document.getElementById('data');
+                // You can display specific information from the response, e.g., titles
+                const titles = data.articles.map(article => article.title);
+                dataElement.innerText = JSON.stringify(titles, null, 2);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+<body>
+    <div class="container">
+        <div class="nav-section">
+            <div class="navigation">
+                <h2>WEB-3</h2>
+                <ul>
+                    <li>
+                        <div class="menu-icon" id="hovered">
+                            <i  class=" icon"><img src="/images/house-solid.svg" alt=""></i>
+                        <a href="index.html" class="dash">
+                       Dashboard</a>
+                        </div>
+                        <div class="menu-icon" id="hovered">
+                            <i  class=" icon "><img src="/images/people-group-solid.svg" alt=""></i>
+                        <a href="#">
+                       USERS</a>
+                        </div>
+                        <div class="menu-icon"  id="hovered">
+                            <i  class=" icon"><img src="/images/message-regular.svg" alt=""></i>
+                        <a href="#">
+                       Messages</a>
+                        </div>
+                        <div class="menu-icon"  id="hovered">
+                            <i  class=" icon"><img src="/images/rss-solid.svg" alt=""></i>
+                        <a href="news.html" class="dash">
+                      Feeds</a>
+                        </div>
+                        <div class="menu-icon"  id="hovered">
+                            <i  class=" icon"><img src="/images/chart-column-solid.svg" alt=""></i>
+                         <a href="Statics/statics.html" class="dash">
+                      Statics</a>
+                        </div>
+                        <div class="menu-icon"  id="hovered">
+                            <i  class="icon"><img src="/images/question-solid.svg" alt=""></i>
+                        <a href="help.html" class="dash">
+                       Help</a>
+                        </div>
+                        <div class="menu-icon"  id="hovered">
+                            <i  class="icon"><img src="/images/gear-solid.svg" alt=""></i>
+                        <a href="#" >
+                Setting</a>
+                        </div>
+                       
+                        <div class="menu-icon"  id="hovered">
+                            <i  class=" icon"><img src="/images/arrow-right-from-bracket-solid.svg" alt=""></i>
+                        <a href="#">
+                      Sign Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="grid-container">
+
+            <!-- Header -->
+            <header class="main-header">
+              <div class="list-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+              </div>
+              <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+              </div>
+              <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+              </div>
+            </header>
+      
+            <!-- Main -->
+            <main class="main-container">
+              
+      
+              <div class="main-cards">
+      
+                <div class="card">
+                  <div class="card-inner">
+                    <h3>Facebook</h3>
+                    <img src="images/icon-facebook.svg" alt="facebook">
+                  </div>
+                  <h1>249</h1>
+                </div>
+      
+                <div class="card">
+                  <div class="card-inner">
+                    <h3>Instagram</h3>
+                    <img src="images/icon-instagram.svg" alt="instagram">
+                  </div>
+                  <h1>25</h1>
+                </div>
+      
+                <div class="card">
+                  <div class="card-inner">
+                    <h3>Twitter</h3>
+                    <img src="images/icon-twitter.svg" alt="twitter">
+                  </div>
+                  <h1>1500</h1>
+                </div>
+      
+                <div class="card">
+                  <div class="card-inner">
+                    <h3>Youtube</h3>
+                    <img src="images/icon-youtube.svg" alt="youtube">
+                  </div>
+                  <h1>56</h1>
+                </div>
+      
+              </div>
+      
+              <div class="charts">
+      
+                <div class="charts-card">
+                  <h2 class="chart-title">Top 5 Social Media</h2>
+                  <div id="bar-chart"></div>
+                </div>
+      
+                <div class="charts-card">
+                  <h2 class="chart-title">Likes and Comments</h2>
+                  <div id="area-chart"></div>
+                </div>
+      
+              </div>
+            </main>
+            <!-- End Main -->
+      
+          </div>
+      
+          <!-- Scripts -->
+          <!-- ApexCharts -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+          <!-- Custom JS -->
+          <script src="js/sidebar.js"></script>
+</body>
+</html>
